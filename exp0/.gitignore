@@ -1,0 +1,9 @@
+.venv/
+.cache/
+.tmp/
+models/
+tools/
+results/
+results_smoke/
+data/
+__pycache__/

@@ -1,0 +1,78 @@
+{
+ "tau_d_phi": 0.3069711156810827,
+ "grouping_quality": {
+  "phi exact key [ours]": {
+   "precision": 0.6296296296296297,
+   "recall": 0.4722222222222222,
+   "f1": 0.5396825396825397,
+   "n_pairs": 402
+  },
+  "phi exact key [manual]": {
+   "precision": 0.975609756097561,
+   "recall": 0.7947019867549668,
+   "f1": 0.875912408759124,
+   "n_pairs": 163
+  },
+  "phi exact key [human]": {
+   "precision": 0.90625,
+   "recall": 0.5858585858585859,
+   "f1": 0.7116564417177914,
+   "n_pairs": 127
+  },
+  "L1 key [ours]": {
+   "precision": 0.45614035087719296,
+   "recall": 0.7222222222222222,
+   "f1": 0.5591397849462365,
+   "n_pairs": 402
+  },
+  "L1 key [manual]": {
+   "precision": 0.9574468085106383,
+   "recall": 0.8940397350993378,
+   "f1": 0.9246575342465754,
+   "n_pairs": 163
+  },
+  "L1 key [human]": {
+   "precision": 0.8645833333333334,
+   "recall": 0.8383838383838383,
+   "f1": 0.8512820512820513,
+   "n_pairs": 127
+  },
+  "d_phi <= tau [ours]": {
+   "precision": 0.40764331210191085,
+   "recall": 0.8888888888888888,
+   "f1": 0.5589519650655023,
+   "n_pairs": 402
+  },
+  "d_phi <= tau [manual]": {
+   "precision": 0.9583333333333334,
+   "recall": 0.9139072847682119,
+   "f1": 0.9355932203389832,
+   "n_pairs": 163
+  },
+  "d_phi <= tau [human]": {
+   "precision": 0.8557692307692307,
+   "recall": 0.898989898989899,
+   "f1": 0.8768472906403941,
+   "n_pairs": 127
+  }
+ },
+ "repeatability": {
+  "programs": 135,
+  "L1_class_flips": 1,
+  "flip_rate": 0.007407407407407408,
+  "median_abs_delta_b": 0.0,
+  "max_abs_delta_b": 0.04321533129628641,
+  "fp_workers": 10
+ },
+ "status": {
+  "pacd_pairs": 0,
+  "manual_pairs": 200,
+  "human_pairs": 196,
+  "complete": true
+ },
+ "weights": [
+  0.6,
+  0.25,
+  0.15
+ ]
+}

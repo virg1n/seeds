@@ -1,0 +1,7 @@
+vllm>=0.18.0
+huggingface_hub
+scikit-learn
+scipy
+matplotlib
+requests
+numpy
