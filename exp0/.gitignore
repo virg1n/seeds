@@ -4,6 +4,6 @@
 models/
 tools/
 results/
-results_smoke/
-data/
+results_coder/
+results_v2/
 __pycache__/

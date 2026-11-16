@@ -1,0 +1,50 @@
+{"idx": 100, "same": 1, "confidence": "low", "level": null, "reason": "Both use O(1) closed form based on n-1 non-multiples per block of n."}
+{"idx": 101, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 102, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 103, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 104, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 105, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 106, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 107, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 108, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 109, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 110, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 111, "same": 0, "confidence": "high", "level": "formula_vs_iteration", "reason": "A uses closed-form N//3; B repeatedly subtracts 3 in a loop."}
+{"idx": 112, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 113, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 114, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 115, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 116, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 117, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 118, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 119, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 120, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 121, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 122, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 123, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 124, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 125, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 126, "same": 0, "confidence": "low", "level": "complexity", "reason": "A rebuilds the remaining list and sums it per apple (O(n^2)); B computes remaining by subtracting from total (O(n))."}
+{"idx": 127, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 128, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 129, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 130, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 131, "same": 0, "confidence": "low", "level": "library_vs_manual", "reason": "A compares year/month/day components manually; B parses with datetime and compares date objects."}
+{"idx": 132, "same": 0, "confidence": "high", "level": "library_vs_manual", "reason": "A extracts digits arithmetically with %,//; B converts to string and iterates characters."}
+{"idx": 133, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 134, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 135, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 136, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 137, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 138, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 139, "same": 1, "confidence": "low", "level": null, "reason": "Both build a list of n empty dicts; A via comprehension, B via list multiplication."}
+{"idx": 140, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 141, "same": 0, "confidence": "high", "level": "complexity", "reason": "A brute-force O(n^2) pair XOR check; B counts parity and uses n(n-1)/2 formula."}
+{"idx": 142, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 143, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 144, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 145, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 146, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 147, "same": 0, "confidence": "high", "level": "formula_vs_iteration", "reason": "A brute-forces every integer meeting point; B uses rounded mean as optimum."}
+{"idx": 148, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}
+{"idx": 149, "same": 1, "confidence": "high", "level": null, "reason": "Both implement the same algorithm."}

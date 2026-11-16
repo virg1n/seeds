@@ -1,0 +1,50 @@
+{"idx": 50, "same": 0, "confidence": "low", "level": "other", "reason": "A loops over characters counting +/- ; B builds an expression string and evaluates it with eval."}
+{"idx": 51, "same": 1, "confidence": "high", "level": null, "reason": "Both simulate walking with battery/accumulator charge, using the same greedy rule for which to use."}
+{"idx": 52, "same": 1, "confidence": "high", "level": null, "reason": "Both brute force all 6 RGB permutations cycled over the string and pick min mismatches."}
+{"idx": 53, "same": 1, "confidence": "high", "level": null, "reason": "Both compute digit sum and test N mod digit sum."}
+{"idx": 54, "same": 1, "confidence": "high", "level": null, "reason": "Both binary search N with cost A*N+B*len(str(N)) <= X."}
+{"idx": 55, "same": 1, "confidence": "high", "level": null, "reason": "Both concatenate T+S."}
+{"idx": 56, "same": 1, "confidence": "high", "level": null, "reason": "Both meet-in-the-middle: enumerate half paths storing xor counts per cell, then match from the other end (recursion vs bitmask enumeration)."}
+{"idx": 57, "same": 1, "confidence": "high", "level": null, "reason": "Both uppercase first letters of three words."}
+{"idx": 58, "same": 1, "confidence": "high", "level": null, "reason": "Both sort edges by weight and process equal-weight groups with DSU, counting edges not needed in MST."}
+{"idx": 59, "same": 1, "confidence": "high", "level": null, "reason": "Both compute (T//A)*B."}
+{"idx": 60, "same": 1, "confidence": "high", "level": null, "reason": "Both closed form: largest k<=n with k mod x == y."}
+{"idx": 61, "same": 1, "confidence": "high", "level": null, "reason": "Both law of cosines with hand angle between hour and minute hands."}
+{"idx": 62, "same": 0, "confidence": "low", "level": "other", "reason": "A: DP on (index, number of times subtracting 1) O(n^2) using prefix sums; B: DP on (index, current time mod h) O(n*h)."}
+{"idx": 63, "same": 1, "confidence": "high", "level": null, "reason": "Both greedy two-pointer taking smaller valid end of the array to build a strictly increasing sequence."}
+{"idx": 64, "same": 1, "confidence": "high", "level": null, "reason": "Both print Hello World or sum of A and B."}
+{"idx": 65, "same": 1, "confidence": "high", "level": null, "reason": "Both closed form: move toward zero by min(|x|//d,k) steps then parity of remaining steps."}
+{"idx": 66, "same": 1, "confidence": "high", "level": null, "reason": "Both sum (n-1)//i for i in 1..n-1."}
+{"idx": 67, "same": 0, "confidence": "low", "level": "complexity", "reason": "A: set of points with discard over each segment's range; B: for every point check all segments O(n*m)."}
+{"idx": 68, "same": 1, "confidence": "high", "level": null, "reason": "Both max of four products."}
+{"idx": 69, "same": 1, "confidence": "high", "level": null, "reason": "Both case analysis on n: 0, m, 2m."}
+{"idx": 70, "same": 1, "confidence": "high", "level": null, "reason": "Both full cycles of A+B times A plus min(A, remainder)."}
+{"idx": 71, "same": 1, "confidence": "low", "level": null, "reason": "Both greedy by earliest exam deadline assigning preparation days (A day-by-day, B exam-by-exam sorted by deadline)."}
+{"idx": 72, "same": 1, "confidence": "high", "level": null, "reason": "Both compare strings from the end counting common suffix."}
+{"idx": 73, "same": 0, "confidence": "high", "level": "paradigm", "reason": "A: greedy with state tracking remainders mod 3 to cut; B: DP over residue classes with max."}
+{"idx": 74, "same": 1, "confidence": "high", "level": null, "reason": "Both brute force multiples a*i mod b == c."}
+{"idx": 75, "same": 1, "confidence": "high", "level": null, "reason": "Both count multiples of 4, of 2 only, and odds and compare."}
+{"idx": 76, "same": 1, "confidence": "high", "level": null, "reason": "Both BFS generating distinct subsequences by deleting one char with a visited set until k collected."}
+{"idx": 77, "same": 1, "confidence": "high", "level": null, "reason": "Both drop empty rows and columns and print the remaining grid."}
+{"idx": 78, "same": 1, "confidence": "high", "level": null, "reason": "Both per-row knapsack DP over (picked count, mod k) then combine rows by DP over mod k."}
+{"idx": 79, "same": 1, "confidence": "high", "level": null, "reason": "Both invert the permutation."}
+{"idx": 80, "same": 1, "confidence": "high", "level": null, "reason": "Both closed form alternating a and b by parity of k."}
+{"idx": 81, "same": 1, "confidence": "low", "level": null, "reason": "Both prefix balance of brackets; count positions to flip so final balance is 0 with prefix minimum constraint."}
+{"idx": 82, "same": 0, "confidence": "low", "level": "other", "reason": "A: sorts and tries removing max-left or min-right segment; B: tracks top-two lefts and rights and computes intersection for every removed segment."}
+{"idx": 83, "same": 1, "confidence": "high", "level": null, "reason": "Both LCM via a*b/gcd."}
+{"idx": 84, "same": 0, "confidence": "low", "level": "data_structure", "reason": "A: prefix sums shifted then sorted and compared to 1..n; B: same prefix sums validated with a visited array."}
+{"idx": 85, "same": 1, "confidence": "high", "level": null, "reason": "Both trial division over divisors up to sqrt, minimizing max digit length of the pair."}
+{"idx": 86, "same": 1, "confidence": "high", "level": null, "reason": "Both prefix sums and O(n^2) over all segments of length >= k for max average."}
+{"idx": 87, "same": 1, "confidence": "low", "level": null, "reason": "Both greedy left to right: decrease height by at most 1 to make non-decreasing."}
+{"idx": 88, "same": 0, "confidence": "high", "level": "formula_vs_iteration", "reason": "A: enumerates digit-repeated numbers 1..9999 summing digits; B: closed form 10*(d-1)+len*(len+1)/2."}
+{"idx": 89, "same": 1, "confidence": "high", "level": null, "reason": "Both count mismatched mirrored pairs of the string."}
+{"idx": 90, "same": 1, "confidence": "high", "level": null, "reason": "Both Kruskal MST with edges from min-weight vertex to all others."}
+{"idx": 91, "same": 1, "confidence": "high", "level": null, "reason": "Both check if N is a product of two digits 1..9 by looping."}
+{"idx": 92, "same": 1, "confidence": "high", "level": null, "reason": "Both sort and check for adjacent elements differing by 1."}
+{"idx": 93, "same": 0, "confidence": "low", "level": "other", "reason": "A: 3D DP over (index, sum, count) with sum/count averaging; B: shifts values by A and dict DP over sums, count zero-sum subsets."}
+{"idx": 94, "same": 0, "confidence": "low", "level": "paradigm", "reason": "A: direct DP over levels with two endpoints; B: builds layered graph and runs Dijkstra."}
+{"idx": 95, "same": 1, "confidence": "high", "level": null, "reason": "Both count frequencies with a hash map and take max."}
+{"idx": 96, "same": 1, "confidence": "high", "level": null, "reason": "Both try endings 00, 25, 50, 75 using rightmost positions and swap counts plus leading zero fix."}
+{"idx": 97, "same": 1, "confidence": "high", "level": null, "reason": "Both DP over (picked count, last picked position) with window K, maximizing sum."}
+{"idx": 98, "same": 1, "confidence": "high", "level": null, "reason": "Both simulate k steps: subtract 1 or divide by 10 if last digit zero."}
+{"idx": 99, "same": 0, "confidence": "low", "level": "other", "reason": "A: dp over positions with transitions from umbrella pickup points; B: memoized recursion with state of currently carried umbrella weight."}

@@ -1,0 +1,50 @@
+{"idx":100,"same":1,"confidence":"high","level":null,"reason":"Both compute max(0, c-(a-b)) directly; A with if/else, B with max()."}
+{"idx":101,"same":0,"confidence":"low","level":"complexity","reason":"A stores first index per value in an array (O(n)); B scans a growing list with `in met[:-1]` (O(n^2))."}
+{"idx":102,"same":1,"confidence":"low","level":null,"reason":"A looks up day in a list and prints 7-index; B hardcodes the same day-to-number mapping with if/elif."}
+{"idx":103,"same":0,"confidence":"high","level":"formula_vs_iteration","reason":"A accumulates ring costs in a loop over k rings; B uses a closed-form sum-of-squares style formula."}
+{"idx":104,"same":0,"confidence":"high","level":"complexity","reason":"A recomputes max(H[:h]) prefix each step (O(n^2)); B tracks a running maximum in one pass."}
+{"idx":105,"same":1,"confidence":"low","level":null,"reason":"Both scan once to find stairway ends (A: next element not greater; B: element before each 1 plus last)."}
+{"idx":106,"same":1,"confidence":"high","level":null,"reason":"Both sum reciprocals and output 1/sum, loop vs comprehension+sum."}
+{"idx":107,"same":1,"confidence":"high","level":null,"reason":"Both compute the amount to next multiple via modulo: b - a%b, or 0 if divisible."}
+{"idx":108,"same":1,"confidence":"low","level":null,"reason":"Both compute distance to next multiple of 1000 arithmetically (n%1000 vs ceil(n/1000)*1000-n)."}
+{"idx":109,"same":0,"confidence":"high","level":"data_structure","reason":"A uses 26-letter counting array to drop the k smallest letters; B sorts (index,char) pairs, drops first k, re-sorts by index."}
+{"idx":110,"same":0,"confidence":"low","level":"other","reason":"A uses parity case analysis (n if even else 2n); B computes lcm(n,2) via gcd."}
+{"idx":111,"same":1,"confidence":"low","level":null,"reason":"Both compute sum of all apple flavors minus the flavor with smallest absolute value; A linear min search, B sorts by abs."}
+{"idx":112,"same":1,"confidence":"high","level":null,"reason":"Both use increasing-run lengths ending/starting at each index and merge across one removed element."}
+{"idx":113,"same":0,"confidence":"low","level":"other","reason":"A extracts nonzero digits via string reversal and zero padding; B extracts digits arithmetically with n%10 and powers of ten."}
+{"idx":114,"same":1,"confidence":"high","level":null,"reason":"Both compute skips needed per monster, sort, and greedily take cheapest while k allows."}
+{"idx":115,"same":1,"confidence":"high","level":null,"reason":"Both sort strings by length and check each is a substring of the next."}
+{"idx":116,"same":1,"confidence":"high","level":null,"reason":"Both weight a[i] by (i+1)(n-i), sort descending vs b ascending, sum products mod."}
+{"idx":117,"same":1,"confidence":"high","level":null,"reason":"Both compute ceil(n/2) via parity check."}
+{"idx":118,"same":1,"confidence":"high","level":null,"reason":"Both count subarrays with median m as f(m)-f(m+1) using prefix balance counts and running sum of earlier counts."}
+{"idx":119,"same":1,"confidence":"low","level":null,"reason":"Both build the binary string with x-1 transitions by alternating then appending remaining runs; A via string multiplication, B via loop."}
+{"idx":120,"same":1,"confidence":"high","level":null,"reason":"Both output (n-1)//2 via parity check on n."}
+{"idx":121,"same":1,"confidence":"high","level":null,"reason":"Both greedily scan and flip a character when equal to previous, counting flips."}
+{"idx":122,"same":1,"confidence":"high","level":null,"reason":"Both decrement the count of the ball type matching the thrown ball."}
+{"idx":123,"same":0,"confidence":"low","level":"paradigm","reason":"A assigns each char color 1+max color of smaller-index greater letters via DP; B checks inversions pairwise with suffix-min then colors by comparison to earlier chars."}
+{"idx":124,"same":1,"confidence":"high","level":null,"reason":"Both count subarrays containing m via +-1 prefix balance and hashmap of counts."}
+{"idx":125,"same":1,"confidence":"high","level":null,"reason":"Both check whether the character is uppercase, via isupper vs ord ranges."}
+{"idx":126,"same":1,"confidence":"high","level":null,"reason":"Both output 2*min(count0, count1)."}
+{"idx":127,"same":1,"confidence":"high","level":null,"reason":"Both evaluate the same boolean/bitwise expression of the four inputs."}
+{"idx":128,"same":1,"confidence":"high","level":null,"reason":"Both traverse components and count those where every vertex has degree 2."}
+{"idx":129,"same":1,"confidence":"high","level":null,"reason":"Both use the same hardcoded lookup table of answers."}
+{"idx":130,"same":1,"confidence":"high","level":null,"reason":"Both count evens and odds and print the min."}
+{"idx":131,"same":1,"confidence":"high","level":null,"reason":"Both compute L^3/27."}
+{"idx":132,"same":1,"confidence":"high","level":null,"reason":"Both assign position offsets to books via left/right counters and answer min distance to either end."}
+{"idx":133,"same":1,"confidence":"high","level":null,"reason":"Both print min(n*a, b)."}
+{"idx":134,"same":1,"confidence":"high","level":null,"reason":"Both compute (A-1)(B-1)."}
+{"idx":135,"same":0,"confidence":"low","level":"other","reason":"A rotates the string and uses capitalize/swapcase trick; B indexes uppercase letter and replaces the char with its lowercase."}
+{"idx":136,"same":1,"confidence":"high","level":null,"reason":"Both sort stores by price and greedily buy cheapest first until m is used."}
+{"idx":137,"same":1,"confidence":"high","level":null,"reason":"Both sort s ascending and t descending and compare lexicographically."}
+{"idx":138,"same":1,"confidence":"high","level":null,"reason":"Both sort and sum differences of adjacent pairs."}
+{"idx":139,"same":1,"confidence":"high","level":null,"reason":"Both map base to complement with if/elif."}
+{"idx":140,"same":1,"confidence":"low","level":null,"reason":"Both compute parity of n(n+1)/2; A via n%4 in {1,2}, B via direct triangular number."}
+{"idx":141,"same":0,"confidence":"low","level":"paradigm","reason":"A evals the expression then adjusts per operator with extra offset by scanning following digits; B parses numbers one pass with a sign/factor accumulator."}
+{"idx":142,"same":1,"confidence":"high","level":null,"reason":"Both toggle between ABC and ARC with a single comparison."}
+{"idx":143,"same":1,"confidence":"high","level":null,"reason":"Both sort by city ascending then score descending and print original indices."}
+{"idx":144,"same":1,"confidence":"high","level":null,"reason":"Both build prefix counts of 'AC' occurrences and answer queries by difference."}
+{"idx":145,"same":1,"confidence":"low","level":null,"reason":"Both use nested binary search over blocks of the concatenated sequence using digit-length-grouped sums; A with precomputed tables, B with closed-form functions."}
+{"idx":146,"same":1,"confidence":"high","level":null,"reason":"Both sort a[i]-b[i] and count pairs with positive sum via bisect."}
+{"idx":147,"same":1,"confidence":"high","level":null,"reason":"Both return the first non-1 digit among first K characters, else 1."}
+{"idx":148,"same":1,"confidence":"high","level":null,"reason":"Both run multi-source BFS on reversed jump graph starting from nodes adjacent to opposite parity."}
+{"idx":149,"same":1,"confidence":"high","level":null,"reason":"Both track min and max prefix sum and compute valid initial counts."}

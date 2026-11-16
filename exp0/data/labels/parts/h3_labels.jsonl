@@ -1,0 +1,46 @@
+{"idx": 150, "same": 1, "confidence": "high", "level": null, "reason": "Both take the k largest values via sort, then sort their indices and output gaps as segment lengths."}
+{"idx": 151, "same": 1, "confidence": "high", "level": null, "reason": "Both check both operands are 1..9 and print the product else -1."}
+{"idx": 152, "same": 1, "confidence": "high", "level": null, "reason": "Both loop 1..N counting numbers with odd digit count via len(str(i))."}
+{"idx": 153, "same": 1, "confidence": "high", "level": null, "reason": "Both append 'es' if last char is 's' else 's'."}
+{"idx": 154, "same": 1, "confidence": "low", "level": null, "reason": "Both are O(1) checks for a multiple of K in [A,B]; A via next-multiple/endpoint checks, B via floor-division count comparison."}
+{"idx": 155, "same": 1, "confidence": "low", "level": null, "reason": "Both are a linear scan for the longest run of non-increasing steps; A keeps a running counter, B records ascent positions and takes max gap."}
+{"idx": 156, "same": 1, "confidence": "high", "level": null, "reason": "Both print int(X + Y/2)."}
+{"idx": 157, "same": 1, "confidence": "high", "level": null, "reason": "Both strip factors 2,3,5 with weighted op counts and output -1 if remainder is not 1."}
+{"idx": 158, "same": 0, "confidence": "low", "level": "library_vs_manual", "reason": "A uses a regex pattern to validate alternating char constraints; B slices even/odd positions and checks allowed characters with all()."}
+{"idx": 159, "same": 0, "confidence": "high", "level": "formula_vs_iteration", "reason": "A binary searches on the number of a-turns; B computes the answer with a closed-form division formula."}
+{"idx": 160, "same": 1, "confidence": "high", "level": null, "reason": "Both convert times to minutes, take the midpoint and format as HH:MM."}
+{"idx": 161, "same": 1, "confidence": "high", "level": null, "reason": "Both count base-K digits by repeated division of N."}
+{"idx": 162, "same": 1, "confidence": "high", "level": null, "reason": "Both try every split point recomputing prefix and suffix sums and take the min abs difference (O(n^2))."}
+{"idx": 163, "same": 1, "confidence": "high", "level": null, "reason": "Both compute gcd of all elements then count divisors by trial division to sqrt."}
+{"idx": 164, "same": 1, "confidence": "high", "level": null, "reason": "Both mark neighbors of island 1 and neighbors of island N and check for an overlap (boolean arrays vs sets)."}
+{"idx": 165, "same": 0, "confidence": "low", "level": "other", "reason": "A uses first/last occurrence intervals with a difference array and multiplies 2 per free boundary; B counts merged-component starts with a sweep and outputs 2^(count-1)."}
+{"idx": 166, "same": 1, "confidence": "high", "level": null, "reason": "Both use prefix and suffix gcd arrays and take the max gcd of the array with one element removed."}
+{"idx": 167, "same": 1, "confidence": "high", "level": null, "reason": "Both repeatedly delete the last character and check whether the string halves are equal."}
+{"idx": 168, "same": 1, "confidence": "high", "level": null, "reason": "Both greedily take the smaller valid end of the deque and on ties compare the strictly increasing run lengths from each side."}
+{"idx": 169, "same": 1, "confidence": "high", "level": null, "reason": "Both brute-force all 2^N subsets of books, summing skills and costs and taking min cost meeting X."}
+{"idx": 170, "same": 1, "confidence": "low", "level": null, "reason": "Both compute the max star size per cell from four directional run lengths and verify coverage of all stars; A with sweeps, B with dp and difference arrays."}
+{"idx": 171, "same": 1, "confidence": "high", "level": null, "reason": "Both sort savings (a-b) descending and greedily subtract until total fits, else -1."}
+{"idx": 172, "same": 0, "confidence": "low", "level": "data_structure", "reason": "A is an online greedy with set/dict of pending elements checking 2^i - e; B sorts and uses bisect_left to search each partner with a used array."}
+{"idx": 173, "same": 1, "confidence": "high", "level": null, "reason": "Both print a*b."}
+{"idx": 174, "same": 0, "confidence": "high", "level": "complexity", "reason": "A uses Counter dictionaries for O(n+m); B recounts with list comprehensions per card giving O(n(n+m))."}
+{"idx": 175, "same": 1, "confidence": "low", "level": null, "reason": "Both are knapsack-style DP distributing cards among players with joy h; A per favorite color, B global dp[players][cards] table."}
+{"idx": 176, "same": 1, "confidence": "high", "level": null, "reason": "Both print integers from x-k+1 to x+k-1 clipped to [-1e6,1e6]."}
+{"idx": 177, "same": 1, "confidence": "high", "level": null, "reason": "Both reject if any value occurs more than k times, else sort with indices and assign colors cyclically 1..k."}
+{"idx": 178, "same": 1, "confidence": "low", "level": null, "reason": "Both replace every character with 'x' (regex sub vs printing x per character)."}
+{"idx": 179, "same": 1, "confidence": "high", "level": null, "reason": "Both greedily replace digits with f(d) from the first digit where f is larger until it becomes smaller."}
+{"idx": 180, "same": 1, "confidence": "high", "level": null, "reason": "Both fill digit constraints, check conflicts and leading zero, fill defaults with minimal digits."}
+{"idx": 181, "same": 0, "confidence": "low", "level": "other", "reason": "A simulates jumps with platforms right-aligned then shifted left greedily; B checks a total-length bound and lays platforms left-packed with up to d-1 gaps."}
+{"idx": 182, "same": 1, "confidence": "high", "level": null, "reason": "Both check each even number is divisible by 3 or 5."}
+{"idx": 183, "same": 1, "confidence": "high", "level": null, "reason": "Both brute-force all (X,Y) in 0..100 and verify the height formula against every observation."}
+{"idx": 184, "same": 1, "confidence": "high", "level": null, "reason": "Both sort and take min of h[i+K-1]-h[i] over windows."}
+{"idx": 185, "same": 1, "confidence": "high", "level": null, "reason": "Both count triples where middle is strictly between neighbors."}
+{"idx": 186, "same": 1, "confidence": "low", "level": null, "reason": "Both are O(1) arithmetic: subtract k from a first, remainder from b, floor at zero; branches vs max/min."}
+{"idx": 187, "same": 1, "confidence": "high", "level": null, "reason": "Both print min of pairwise sums."}
+{"idx": 188, "same": 1, "confidence": "high", "level": null, "reason": "Both split into same-sign runs and sum the max of each run."}
+{"idx": 189, "same": 1, "confidence": "high", "level": null, "reason": "Both print ABC if N<=999 else ABD."}
+{"idx": 190, "same": 0, "confidence": "high", "level": "complexity", "reason": "A tries every column switch point recomputing prefix/suffix sums (O(n^2)); B does a linear grid DP for max path sum."}
+{"idx": 191, "same": 1, "confidence": "high", "level": null, "reason": "Both count total factors of 2 in all elements."}
+{"idx": 192, "same": 1, "confidence": "high", "level": null, "reason": "Both slide a window of 3 counting 'ABC' occurrences."}
+{"idx": 193, "same": 1, "confidence": "high", "level": null, "reason": "Both compare the last minus first antenna position with k."}
+{"idx": 194, "same": 1, "confidence": "high", "level": null, "reason": "Both compute (A+B) and subtract 24 if at least 24."}
+{"idx": 195, "same": 1, "confidence": "high", "level": null, "reason": "Both check adjacent equal characters among 4 chars."}

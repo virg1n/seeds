@@ -1,0 +1,50 @@
+{"idx": 0, "same": 1, "confidence": "high", "level": null, "reason": "Both test month membership in {4,6,9,11}; or-chain vs list membership."}
+{"idx": 1, "same": 1, "confidence": "high", "level": null, "reason": "Both brute-force O(N^3) triplets with distinct-length and triangle checks."}
+{"idx": 2, "same": 1, "confidence": "high", "level": null, "reason": "Both binary search for left insertion point."}
+{"idx": 3, "same": 0, "confidence": "low", "level": "library_vs_manual", "reason": "A counts '1' chars in bin() string; B uses int.bit_count popcount."}
+{"idx": 4, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 5, "same": 1, "confidence": "high", "level": null, "reason": "Both rotate 32-bit via shift left OR shift right with mask."}
+{"idx": 6, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 7, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 8, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 9, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 10, "same": 1, "confidence": "high", "level": null, "reason": "Both hash-count frequencies (dict.get loop vs Counter)."}
+{"idx": 11, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 12, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 13, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 14, "same": 1, "confidence": "low", "level": null, "reason": "Both compute floor quotient (// vs math.floor of true division)."}
+{"idx": 15, "same": 1, "confidence": "low", "level": null, "reason": "A multiplies power of K up past N; B divides N by K repeatedly; both count digits by iteration."}
+{"idx": 16, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 17, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 18, "same": 1, "confidence": "high", "level": null, "reason": "Both multiply all numbers and test parity; A exits early."}
+{"idx": 19, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 20, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 21, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 22, "same": 0, "confidence": "high", "level": "paradigm", "reason": "A runs BFS checking distance exactly 2 from 1 to N; B intersects neighbor sets of 1 and N."}
+{"idx": 23, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 24, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 25, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 26, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 27, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 28, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 29, "same": 1, "confidence": "high", "level": null, "reason": "Both loop a up to cube root, then b up to sqrt of remainder looking for distinct factors."}
+{"idx": 30, "same": 1, "confidence": "high", "level": null, "reason": "Both sort and take the n largest."}
+{"idx": 31, "same": 0, "confidence": "high", "level": "complexity", "reason": "A single pass tracking running max O(N); B nested prefix check O(N^2)."}
+{"idx": 32, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 33, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 34, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 35, "same": 0, "confidence": "high", "level": "complexity", "reason": "A linear scan tracking max sum; B sorts by sum."}
+{"idx": 36, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 37, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 38, "same": 0, "confidence": "high", "level": "complexity", "reason": "A recomputes digit sum of every substring O(n^3); B uses running sum O(n^2)."}
+{"idx": 39, "same": 1, "confidence": "low", "level": null, "reason": "Both O(n^2) over lengths and windows; A uses prefix sums, B sliding window sum."}
+{"idx": 40, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 41, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 42, "same": 1, "confidence": "high", "level": null, "reason": "Both use prefix sums and scan all split points for min difference."}
+{"idx": 43, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 44, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 45, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 46, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 47, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 48, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}
+{"idx": 49, "same": 1, "confidence": "high", "level": null, "reason": "Same approach in both programs."}

@@ -1,0 +1,50 @@
+{"idx": 0, "same": 0, "confidence": "high", "level": "other", "reason": "A swaps digits 1/9 via chained string replace; B extracts each digit arithmetically with modulo and adds/subtracts 8 per place."}
+{"idx": 1, "same": 1, "confidence": "low", "level": null, "reason": "Both treat strings as base-26 numbers and compute the midpoint by big-number add/halve with carry (A sums then halves, B subtracts then halves and adds back)."}
+{"idx": 2, "same": 1, "confidence": "low", "level": null, "reason": "Both try the 9 +-1/0 adjustments of two fixed elements to fix the arithmetic progression difference and count the +-1 changes in a linear check (A from first two, B from first and last)."}
+{"idx": 3, "same": 1, "confidence": "high", "level": null, "reason": "Both fold LCM via a*b//gcd across all inputs."}
+{"idx": 4, "same": 0, "confidence": "high", "level": "formula_vs_iteration", "reason": "A brute-forces all N! permutations summing path lengths; B uses the closed form 2*sum of pairwise distances/N."}
+{"idx": 5, "same": 1, "confidence": "low", "level": null, "reason": "Both linearly search for the nearest integer to X not in list p (A scans a range keeping min distance, B expands outward by diff)."}
+{"idx": 6, "same": 1, "confidence": "high", "level": null, "reason": "Both case-analyze each symmetric pair of positions by distinct-character counts to count needed changes."}
+{"idx": 7, "same": 1, "confidence": "high", "level": null, "reason": "Both output ceil of sum/n (math.ceil vs integer ceil trick)."}
+{"idx": 8, "same": 1, "confidence": "high", "level": null, "reason": "Both enumerate divisors up to sqrt(n) and pick the largest divisor <= k to output n//d."}
+{"idx": 9, "same": 1, "confidence": "high", "level": null, "reason": "Both use inclusion-exclusion 10^n - 2*9^n + 8^n mod 1e9+7."}
+{"idx": 10, "same": 1, "confidence": "high", "level": null, "reason": "Both check n even and first half equals second half."}
+{"idx": 11, "same": 1, "confidence": "low", "level": null, "reason": "Both find longest run of ones circularly in O(n): A by doubling the array, B by prefix-run plus suffix-run plus max inner run."}
+{"idx": 12, "same": 1, "confidence": "high", "level": null, "reason": "Both count frequencies, sort descending, and greedily halve the previous count to get max total of c*(2^k-1)."}
+{"idx": 13, "same": 1, "confidence": "low", "level": null, "reason": "A uses closed form min+k with max/min feasibility check; B intersects intervals [x-k,x+k] which gives the same min+k answer."}
+{"idx": 14, "same": 1, "confidence": "low", "level": null, "reason": "Both work on the base-3 representation to find the smallest number >= n with only 0/1 digits (A with digit array and greedy, B with ternary string fix-up)."}
+{"idx": 15, "same": 1, "confidence": "high", "level": null, "reason": "Both build the reversal sequence by alternately appending to left/right of a deque."}
+{"idx": 16, "same": 1, "confidence": "high", "level": null, "reason": "Both print n cubed."}
+{"idx": 17, "same": 1, "confidence": "high", "level": null, "reason": "Both use the same age threshold if-chain."}
+{"idx": 18, "same": 1, "confidence": "high", "level": null, "reason": "Both sort and check arr[k-1] vs arr[k] for ties, with k==0 special case."}
+{"idx": 19, "same": 1, "confidence": "high", "level": null, "reason": "Both do DFS finishing-order toposort then count unreached sources, Kosaraju-style."}
+{"idx": 20, "same": 0, "confidence": "low", "level": "complexity", "reason": "A finds one divisor pair up to sqrt(n) then factors a or b; B builds the full divisor list and tries all divisor pairs with membership check."}
+{"idx": 21, "same": 1, "confidence": "high", "level": null, "reason": "Both 2-color the graph by traversal (A stack DFS, B BFS) and orient edges by color."}
+{"idx": 22, "same": 0, "confidence": "low", "level": "data_structure", "reason": "A simulates until n<=9 and adds 9; B simulates until a repeated value using a visited set and returns its size."}
+{"idx": 23, "same": 1, "confidence": "high", "level": null, "reason": "Both find the mode and spread outward from its first index making neighbors equal with ops 1/2."}
+{"idx": 24, "same": 1, "confidence": "low", "level": null, "reason": "Both compute count of strictly smaller skills via sorting (A bisect_left, B sorted index ranks with ties) then subtract quarreling pairs."}
+{"idx": 25, "same": 1, "confidence": "high", "level": null, "reason": "Both build candidate string from the two length n-1 strings, verify via sorted prefix/suffix comparison, then label P/S."}
+{"idx": 26, "same": 1, "confidence": "high", "level": null, "reason": "Both print n//3."}
+{"idx": 27, "same": 1, "confidence": "high", "level": null, "reason": "Both compute dot product plus C per row and count positive."}
+{"idx": 28, "same": 0, "confidence": "low", "level": "paradigm", "reason": "A uses a dp with pointer to leftmost covering router and backward min propagation; B uses a forward dp with a stack of routers choosing the nearest covering one."}
+{"idx": 29, "same": 0, "confidence": "low", "level": "complexity", "reason": "A repeatedly peels off non-decreasing subsequences in O(n*colors); B assigns each char to the first color whose last char <= it."}
+{"idx": 30, "same": 1, "confidence": "high", "level": null, "reason": "Both evaluate squared-cost at floor(mean) and floor(mean)+1 and take min."}
+{"idx": 31, "same": 0, "confidence": "high", "level": "formula_vs_iteration", "reason": "A loops subtracting x until n<=0 adding t; B uses ceil(N/X)*T closed form."}
+{"idx": 32, "same": 1, "confidence": "high", "level": null, "reason": "Both convert to base -2 by repeated remainder and division by -2 (A via bit ops and negation)."}
+{"idx": 33, "same": 1, "confidence": "high", "level": null, "reason": "Both hash sum-minus-element values across arrays to find two equal values from different arrays."}
+{"idx": 34, "same": 1, "confidence": "high", "level": null, "reason": "Both check chain of last/first letters and duplicates with list membership/count."}
+{"idx": 35, "same": 1, "confidence": "high", "level": null, "reason": "Both print 3*r^2."}
+{"idx": 36, "same": 1, "confidence": "high", "level": null, "reason": "Both enumerate row/column bitmasks and count black cells."}
+{"idx": 37, "same": 1, "confidence": "low", "level": null, "reason": "Both use O(1) geometric case analysis on rectangle coverage (A conditions on full coverage by one or two rectangles, B clips the interval)."}
+{"idx": 38, "same": 1, "confidence": "high", "level": null, "reason": "Both find the position of the zero among five numbers."}
+{"idx": 39, "same": 1, "confidence": "high", "level": null, "reason": "Both output W*H/2 and 1 if point is the center."}
+{"idx": 40, "same": 1, "confidence": "high", "level": null, "reason": "Both print z x y."}
+{"idx": 41, "same": 1, "confidence": "high", "level": null, "reason": "Both parse the month and compare with 4."}
+{"idx": 42, "same": 1, "confidence": "high", "level": null, "reason": "Both split into odds and evens and sum all but the largest surplus elements (sorted)."}
+{"idx": 43, "same": 1, "confidence": "high", "level": null, "reason": "Both bucket indices by residue and pass surplus elements around the circle twice with a stack."}
+{"idx": 44, "same": 1, "confidence": "high", "level": null, "reason": "Both slide T over S and count mismatches, taking min."}
+{"idx": 45, "same": 1, "confidence": "high", "level": null, "reason": "Both compute n!/(2*(n/2)^2) closed form for circular arrangements."}
+{"idx": 46, "same": 1, "confidence": "low", "level": null, "reason": "Both test equality of two numbers (direct compare vs set size)."}
+{"idx": 47, "same": 1, "confidence": "low", "level": null, "reason": "Both are O(n^3) triple loops checking triangle inequality and distinct sides (A sorted with early break)."}
+{"idx": 48, "same": 1, "confidence": "high", "level": null, "reason": "Both use the closed form k//(n-1)*n + remainder to find k-th non-multiple of n."}
+{"idx": 49, "same": 1, "confidence": "high", "level": null, "reason": "Both enumerate x,y and check z=S-x-y in [0,K]."}
